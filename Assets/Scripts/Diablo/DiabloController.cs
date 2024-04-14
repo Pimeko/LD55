@@ -42,7 +42,6 @@ public class DiabloController : MonoBehaviour
     void BeginInterval()
     {
         float delay = UnityEngine.Random.Range(delayBetweenOpenRange.x, delayBetweenOpenRange.y);
-        print(delay);
         DOVirtual.DelayedCall(delay, Begin);
     }
 

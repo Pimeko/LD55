@@ -12,13 +12,16 @@ public class TimerController : MonoBehaviour
     Image image;
     [SerializeField]
     float duration;
-    
+    [SerializeField]
+    Animator animator;
 
     float elapsedTime;
     bool isRunning;
 
     void Start()
     {
+        DiabloController.Instance.onBegin += OnDiabloBegin;
+        DiabloController.Instance.onStop += OnDiabloEnd;
         Stop();
     }
 
@@ -32,6 +35,16 @@ public class TimerController : MonoBehaviour
     public void Stop()
     {
         container.SetActive(false);
+    }
+
+    void OnDiabloBegin()
+    {
+        animator.SetBool("isDiablo", true);
+    }
+
+    void OnDiabloEnd()
+    {
+        animator.SetBool("isDiablo", false);
     }
 
     void Update()

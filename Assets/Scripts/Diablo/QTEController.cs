@@ -59,7 +59,7 @@ public class QTEController : MonoBehaviour
     int nbDone;
     bool isDoingQTE;
 
-    public Action onDone;
+    public Action onGoodQTE, onDone;
 
     void Start()
     {
@@ -83,7 +83,7 @@ public class QTEController : MonoBehaviour
 
     void Generate()
     {
-        string all = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        string all = "ABCDEFGHIJKLOPQRSTWXYZ";
         char c = all[UnityEngine.Random.Range(0, all.Length)];
         qtes.Add(c);
 
@@ -114,6 +114,7 @@ public class QTEController : MonoBehaviour
                 {
                     elementControllers[nbDone].Kill();
                     nbDone++;
+                    onGoodQTE?.Invoke();
                 }
             }
         }
