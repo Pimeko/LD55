@@ -16,4 +16,9 @@ public class MonsterController : MonoBehaviour
     {
         animator.SetTrigger("hit");
     }
+
+    private void OnDestroy()
+    {
+        QTEController.Instance.onGoodQTE -= OnGoodQTE;
+    }
 }

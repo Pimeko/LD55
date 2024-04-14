@@ -63,6 +63,13 @@ public class QTEController : MonoBehaviour
 
     void Start()
     {
+        nbDone = 0;
+        isDoingQTE = false;
+        
+        arrowGO.SetActive(false);
+        elementControllers = new List<QTEElementController>();
+        qtes = new List<char>();
+
         DiabloController.Instance.onBegin += OnBegin;
     }
 

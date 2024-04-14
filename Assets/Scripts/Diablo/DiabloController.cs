@@ -24,21 +24,24 @@ public class DiabloController : MonoBehaviour
     RectTransform boy;
     [SerializeField]
     Transform boyTargetTransform;
-    
+
 
     [SerializeField]
     Vector2 delayBetweenOpenRange;
 
     Transform previousBoyContainerTransform;
 
+    Sequence beginSequence, stopSequence;
+
     public Action onBegin, onStop;
 
     private void Start()
     {
         QTEController.Instance.onDone += OnQTEDone;
+        GameController.Instance.onGameOver += OnGameOver;
         BeginInterval();
     }
-    
+
     void BeginInterval()
     {
         float delay = UnityEngine.Random.Range(delayBetweenOpenRange.x, delayBetweenOpenRange.y);
@@ -47,7 +50,7 @@ public class DiabloController : MonoBehaviour
 
     public void Begin()
     {
-        DOTween.Sequence()
+        beginSequence = DOTween.Sequence()
             .AppendInterval(0.5f)
             .AppendCallback(() =>
             {
@@ -67,10 +70,17 @@ public class DiabloController : MonoBehaviour
         Stop();
     }
 
-    public void Stop()
+    void OnGameOver()
+    {
+        beginSequence.Kill();
+        stopSequence.Kill();
+        Stop(false);
+    }
+
+    public void Stop(bool runInterval = true)
     {
         containerAnimator.SetTrigger("close");
-        DOTween.Sequence()
+        stopSequence = DOTween.Sequence()
             .AppendCallback(() =>
             {
                 boy.transform.SetParent(previousBoyContainerTransform);
@@ -79,11 +89,15 @@ public class DiabloController : MonoBehaviour
 
         onStop?.Invoke();
 
-        BeginInterval();
+        if (runInterval)
+            BeginInterval();
     }
 
     private void OnDestroy()
     {
         QTEController.Instance.onDone -= OnQTEDone;
+        GameController.Instance.onGameOver -= OnGameOver;
+        beginSequence.Kill();
+        stopSequence.Kill();
     }
 }

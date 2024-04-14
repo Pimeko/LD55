@@ -61,4 +61,10 @@ public class TimerController : MonoBehaviour
             }
         }
     }
+
+    private void OnDestroy()
+    {
+        DiabloController.Instance.onBegin -= OnDiabloBegin;
+        DiabloController.Instance.onStop -= OnDiabloEnd;
+    }
 }
