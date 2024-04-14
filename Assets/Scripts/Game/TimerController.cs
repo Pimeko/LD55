@@ -7,9 +7,12 @@ using UnityEngine.UI;
 public class TimerController : MonoBehaviour
 {
     [SerializeField]
+    GameObject container;
+    [SerializeField]
     Image image;
     [SerializeField]
     float duration;
+    
 
     float elapsedTime;
     bool isRunning;
@@ -21,14 +24,14 @@ public class TimerController : MonoBehaviour
 
     public void Begin()
     {
-        image.enabled = true;
+        container.SetActive(true);
         elapsedTime = 0;
         isRunning = true;
     }
 
     public void Stop()
     {
-        image.enabled = false;
+        container.SetActive(false);
     }
 
     void Update()

@@ -25,9 +25,24 @@ public class DiabloController : MonoBehaviour
     [SerializeField]
     Transform boyTargetTransform;
 
+    [SerializeField]
+    Vector2 delayBetweenOpenRange;
+
     Transform previousBoyContainerTransform;
 
     public Action onBegin, onStop;
+
+    private void Start()
+    {
+        BeginInterval();
+    }
+    
+    void BeginInterval()
+    {
+        float delay = UnityEngine.Random.Range(delayBetweenOpenRange.x, delayBetweenOpenRange.y);
+        print(delay);
+        DOVirtual.DelayedCall(delay, Begin);
+    }
 
     public void Begin()
     {
@@ -57,6 +72,8 @@ public class DiabloController : MonoBehaviour
             .Append(boy.DOLocalMove(Vector3.zero, 1.5f));
 
         onStop?.Invoke();
+
+        BeginInterval();
     }
 
     void Update()
