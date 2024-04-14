@@ -16,7 +16,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 666
+    x: 711
     y: 268
     width: 190
     height: 135
@@ -46,7 +46,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 669
+    x: 714
     y: 131
     width: 190
     height: 135
@@ -76,7 +76,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -432
+    x: -388
     y: 416
     width: 190
     height: 135
@@ -107,7 +107,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 723
+    x: 768
     y: 467
     width: 190
     height: 115
@@ -133,12 +133,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 427
+    x: 472
     y: 251
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   answers:
   - No I would never lie to you. I love the gym now.
   - Ok I admit, I lied. I can't tell you who she is because it's for a surprise I'm
@@ -163,12 +163,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 896
+    x: 941
     y: 268
     width: 190
     height: 155
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: 
     text: 
@@ -218,7 +218,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 171
+    x: 216
     y: 255
     width: 190
     height: 135
@@ -248,7 +248,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 169
+    x: 214
     y: 414
     width: 190
     height: 135
@@ -279,7 +279,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 165
+    x: 210
     y: 570
     width: 190
     height: 135
@@ -309,7 +309,7 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -134
+    x: -89
     y: 415
     width: 190
     height: 155
