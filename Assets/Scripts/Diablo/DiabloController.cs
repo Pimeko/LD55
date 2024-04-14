@@ -24,6 +24,7 @@ public class DiabloController : MonoBehaviour
     RectTransform boy;
     [SerializeField]
     Transform boyTargetTransform;
+    
 
     [SerializeField]
     Vector2 delayBetweenOpenRange;
@@ -34,6 +35,7 @@ public class DiabloController : MonoBehaviour
 
     private void Start()
     {
+        QTEController.Instance.onDone += OnQTEDone;
         BeginInterval();
     }
     
@@ -47,7 +49,7 @@ public class DiabloController : MonoBehaviour
     public void Begin()
     {
         DOTween.Sequence()
-            .AppendInterval(1)
+            .AppendInterval(0.5f)
             .AppendCallback(() =>
             {
                 previousBoyContainerTransform = boy.transform.parent;
@@ -59,6 +61,11 @@ public class DiabloController : MonoBehaviour
         necromancerAnimator.SetTrigger("summon");
 
         onBegin?.Invoke();
+    }
+
+    void OnQTEDone()
+    {
+        Stop();
     }
 
     public void Stop()
@@ -76,15 +83,8 @@ public class DiabloController : MonoBehaviour
         BeginInterval();
     }
 
-    void Update()
+    private void OnDestroy()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Begin();
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Stop();
-        }
+        QTEController.Instance.onDone -= OnQTEDone;
     }
 }
