@@ -34,14 +34,12 @@ public class GameController : MonoBehaviour
 
     public void BeginSentence()
     {
-        print("begin sentence");
         timerController.Stop();
         onBeginSentence?.Invoke();
     }
 
     public void BeginAnswer()
     {
-        print("begin answer");
         timerController.Begin();
         onBeginAnswer?.Invoke();
     }
