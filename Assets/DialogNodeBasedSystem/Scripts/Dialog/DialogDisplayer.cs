@@ -69,7 +69,7 @@ namespace cherrydev
         /// </summary>
         public void EnableDialogAnswerPanel()
         {
-            GameController.Instance.BeginTimer();
+            GameController.Instance.BeginAnswer();
             ActiveGameObject(dialogAnswerPanel.gameObject, true);
             dialogAnswerPanel.DisalbleAllButtons();
         }
@@ -87,7 +87,7 @@ namespace cherrydev
         /// </summary>
         public void EnableDialogSentencePanel()
         {
-            GameController.Instance.StopTimer();
+            GameController.Instance.BeginSentence();
             dialogSentensePanel.ResetDialogText();
 
             ActiveGameObject(dialogSentensePanel.gameObject, true);

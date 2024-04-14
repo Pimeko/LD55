@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,8 @@ public class GameController : MonoBehaviour
     [SerializeField]
     TimerController timerController;
 
+    public Action onBeginSentence, onBeginAnswer;
+
     public void RunGameOver(bool timer)
     {
         if (timer)
@@ -29,13 +32,17 @@ public class GameController : MonoBehaviour
             gameOverUI.SetActive(true);
     }
 
-    public void BeginTimer()
+    public void BeginSentence()
     {
-        timerController.Begin();
+        print("begin sentence");
+        timerController.Stop();
+        onBeginSentence?.Invoke();
     }
 
-    public void StopTimer()
+    public void BeginAnswer()
     {
-        timerController.Stop();
+        print("begin answer");
+        timerController.Begin();
+        onBeginAnswer?.Invoke();
     }
 }
