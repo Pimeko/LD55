@@ -17,10 +17,25 @@ public class GameController : MonoBehaviour
     #endregion
 
     [SerializeField]
-    GameObject gameOverUI;
+    GameObject gameOverUI, gameOverTimerUi;
+    [SerializeField]
+    TimerController timerController;
 
-    public void RunGameOver()
+    public void RunGameOver(bool timer)
     {
-        gameOverUI.SetActive(true);
+        if (timer)
+            gameOverTimerUi.SetActive(true);
+        else
+            gameOverUI.SetActive(true);
+    }
+
+    public void BeginTimer()
+    {
+        timerController.Begin();
+    }
+
+    public void StopTimer()
+    {
+        timerController.Stop();
     }
 }
