@@ -39,6 +39,7 @@ public class DiabloController : MonoBehaviour
     {
         QTEController.Instance.onDone += OnQTEDone;
         GameController.Instance.onGameOver += OnGameOver;
+        GameController.Instance.onVictory += OnGameOver;
         BeginInterval();
     }
 
@@ -97,6 +98,7 @@ public class DiabloController : MonoBehaviour
     {
         QTEController.Instance.onDone -= OnQTEDone;
         GameController.Instance.onGameOver -= OnGameOver;
+        GameController.Instance.onVictory -= OnGameOver;
         beginSequence.Kill();
         stopSequence.Kill();
     }

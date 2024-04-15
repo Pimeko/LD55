@@ -20,11 +20,11 @@ public class GameController : MonoBehaviour
     #endregion
 
     [SerializeField]
-    GameObject gameOverUI, gameOverTimerUi;
+    GameObject gameOverUI, gameOverTimerUi, victoryUI;
     [SerializeField]
     TimerController timerController;
 
-    public Action onBeginSentence, onBeginAnswer, onGameOver, onRestart;
+    public Action onBeginSentence, onBeginAnswer, onGameOver, onVictory, onRestart;
 
     public void Restart()
     {
@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour
         gameOverUI.SetActive(false);
 
         onRestart?.Invoke();
-        
+
         DOTween.KillAll();
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
@@ -47,6 +47,12 @@ public class GameController : MonoBehaviour
             gameOverUI.SetActive(true);
     }
 
+    public void RunVictory()
+    {
+        onVictory?.Invoke();
+        victoryUI.SetActive(true);
+    }
+
     public void BeginSentence()
     {
         timerController.Stop();
@@ -57,5 +63,10 @@ public class GameController : MonoBehaviour
     {
         timerController.Begin();
         onBeginAnswer?.Invoke();
+    }
+
+    public void QuitApp()
+    {
+        Application.Quit();
     }
 }

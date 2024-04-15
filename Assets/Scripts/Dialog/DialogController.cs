@@ -13,6 +13,7 @@ public class DialogController : MonoBehaviour
     void Start()
     {
         dialogBehaviour.BindExternalFunction("GameOver", () => GameController.Instance.RunGameOver(false));
+        dialogBehaviour.BindExternalFunction("Victory", () => GameController.Instance.RunVictory());
         dialogBehaviour.StartDialog(dialogGraph);
     }
 
