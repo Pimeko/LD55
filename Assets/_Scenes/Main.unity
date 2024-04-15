@@ -612,7 +612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container: {fileID: 56025268}
   image: {fileID: 1132600270}
-  duration: 30
+  duration: 20
   animator: {fileID: 56025270}
 --- !u!1 &131477186
 GameObject:
@@ -2722,7 +2722,7 @@ MonoBehaviour:
   qteElementPrefab: {fileID: 5999206263860264497, guid: 904172dc42f44d14fbdac5263cde2e0d, type: 3}
   arrowGO: {fileID: 1511128465}
   elementsParent: {fileID: 1464910440}
-  nbQTERange: {x: 10, y: 30}
+  nbQTERange: {x: 15, y: 23}
 --- !u!1 &992508651
 GameObject:
   m_ObjectHideFlags: 0
@@ -6101,8 +6101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54577d38420c01d44a9b28330b6a8517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogCharDelay: 0.008
-  dialogTextDelay: 0.5
+  dialogCharDelay: 0.02
+  dialogTextDelay: 1.7
   nextSentenceKeyCodes: 
   isCanSkippingText: 1
   onDialogStarted:

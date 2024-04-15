@@ -1,5 +1,339 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8933649962776310169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 54
+    y: 1150
+    width: 190
+    height: 175
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - In 2 months.
+  - In 5 months.
+  - In 9 months.
+  - Last month.
+  parentSentenceNode: {fileID: -271231195755085419}
+  childSentenceNodes:
+  - {fileID: -1013900265275681414}
+  - {fileID: 7726387472683781120}
+  - {fileID: -6368301278228081387}
+  - {fileID: 4876139418132830670}
+--- !u!114 &-8302353531643531592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 574
+    y: 988
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -3423840659134889741}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-7993604918546760985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 101
+    y: 571
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: You must be confusing me with your necromancer. Who is really that girl?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7406974724271286972}
+  childNode: {fileID: 9032834097723415581}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-7982984509137142313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1094
+    y: -453
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -6157749210250469095}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-7860668984690139235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -169
+    y: 228
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - I wanted to make you a surprise.
+  - I am planning with her to buy you a ring...
+  parentSentenceNode: {fileID: -6585798228902527230}
+  childSentenceNodes:
+  - {fileID: 1004871799482943669}
+  - {fileID: -6741666279610193329}
+--- !u!114 &-7508018140288919632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -482
+    y: 1381
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -758457045406279964}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-7406974724271286972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -162
+    y: 462
+    width: 190
+    height: 175
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - No, a ring for your birthday.
+  - It's the ring from Lord of the ring.
+  - Yes, a wedding ring.
+  - Did I say a ring? I meant a trip to the Bahamas' Cemetery.
+  parentSentenceNode: {fileID: -6741666279610193329}
+  childSentenceNodes:
+  - {fileID: 1236219779838653689}
+  - {fileID: -7993604918546760985}
+  - {fileID: 8853953344185059104}
+  - {fileID: -5315893687901046968}
+--- !u!114 &-7063074961819276489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 354
+    y: 802
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 'OH MY GOD I LOVE YOU! YES, I SAY YES! '
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 34399806190154289}
+  childNode: {fileID: 5503311360408184589}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-6741666279610193329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -382
+    y: 427
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Do you mean like a wedding ring?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7860668984690139235}
+  childNode: {fileID: -7406974724271286972}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-6724834796570778250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -616
+    y: 840
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - Yes I do.
+  - No I don't.
+  parentSentenceNode: {fileID: 8853953344185059104}
+  childSentenceNodes:
+  - {fileID: -5174553511989468079}
+  - {fileID: 306094964767045736}
+--- !u!114 &-6585798228902527230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -444
+    y: 189
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Why? Is it some kind of a weird secret?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 9032834097723415581}
+  childNode: {fileID: -7860668984690139235}
+  isExternalFunc: 0
+  externalFunctionName: 
 --- !u!114 &-6519716253823023858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,8 +350,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1018
-    y: 62
+    x: 338
+    y: -367
     width: 190
     height: 135
   isDragging: 0
@@ -30,6 +364,95 @@ MonoBehaviour:
   childNode: {fileID: -1163055711983133201}
   isExternalFunc: 0
   externalFunctionName: 
+--- !u!114 &-6368301278228081387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 105
+    y: 1425
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Yes it is. If you did buy me a ring, what was is made of then?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -8933649962776310169}
+  childNode: {fileID: 34399806190154289}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-6157749210250469095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 867
+    y: -456
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Oh yeah? Well this is over.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4668688812578869399}
+  childNode: {fileID: -7982984509137142313}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-5934997851610840639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 531
+    y: -173
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - This is one of the monster I met.
+  - This is the necromancer. It's a she even though she doesn't look like it.
+  parentSentenceNode: {fileID: 7939415001207742299}
+  childSentenceNodes:
+  - {fileID: 1246056074102068709}
+  - {fileID: 3408667521020289386}
 --- !u!114 &-5845659083217363542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,20 +469,141 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1021
-    y: -75
+    x: 162
+    y: -515
     width: 190
     height: 135
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: F
-    text: Well I don't believe you.
+    text: Oh yes, what kind of sports do you do?
     characterSprite: {fileID: 0}
   parentNode: {fileID: -1597853461460815660}
-  childNode: {fileID: 219731907752236180}
+  childNode: {fileID: -4668688812578869399}
   isExternalFunc: 0
   externalFunctionName: 
+--- !u!114 &-5779531449275005605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 238
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - This is my sister and I wanted you to meet her.
+  - 'Stacy is a codename standing for my mom.
+
+'
+  parentSentenceNode: {fileID: 1004871799482943669}
+  childSentenceNodes:
+  - {fileID: -3916829682761538569}
+  - {fileID: 420340439182579001}
+--- !u!114 &-5315893687901046968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -135
+    y: 670
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: I don't buy it, who's the girl?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7406974724271286972}
+  childNode: {fileID: 9032834097723415581}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-5174553511989468079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -403
+    y: 856
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Okay then, what was the name of my first skeledog?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -6724834796570778250}
+  childNode: {fileID: -90799736022506000}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-4979568210175065781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1093
+    y: -778
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 3646551687640937118}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
 --- !u!114 &-4893233432104991217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,8 +620,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -81
-    y: 210
+    x: -812
+    y: -193
     width: 190
     height: 135
   isDragging: 0
@@ -107,16 +651,324 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1075
-    y: 261
+    x: 49
+    y: -195
     width: 190
-    height: 115
+    height: 135
   isDragging: 0
   isSelected: 0
   answers:
-  - 
-  parentSentenceNode: {fileID: 219731907752236180}
-  childSentenceNodes: []
+  - 'This is a girl from work. '
+  - This is not a healthy relationship.
+  parentSentenceNode: {fileID: 426645241737324523}
+  childSentenceNodes:
+  - {fileID: 7939415001207742299}
+  - {fileID: 8620571752627805850}
+--- !u!114 &-4821333101567325023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 134
+    y: 1622
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 4876139418132830670}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-4668688812578869399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 581
+    y: -575
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - Heavy lifting!
+  - Push ups essentially.
+  - It's none of your business.
+  parentSentenceNode: {fileID: -5845659083217363542}
+  childSentenceNodes:
+  - {fileID: 3646551687640937118}
+  - {fileID: -4496991865927005617}
+  - {fileID: -6157749210250469095}
+--- !u!114 &-4640106304863932550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 512
+    y: 564
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 'That''s not for me, I hate diamonds.
+
+'
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 34399806190154289}
+  childNode: {fileID: 7787866059569343415}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-4496991865927005617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 921
+    y: -611
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Don't push your lies onto me. Tell me the truth.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4668688812578869399}
+  childNode: {fileID: -3974773257197230920}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-4394665353778176914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 41
+    y: 968
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 710336530517659205}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-3974773257197230920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -521
+    y: -474
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Who is that girl?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4496991865927005617}
+  childNode: {fileID: 9032834097723415581}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-3916829682761538569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 529
+    y: 233
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: You don't have a sister.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -5779531449275005605}
+  childNode: {fileID: 6405755300554089838}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-3462061408676600082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 270
+    y: 389
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 1236219779838653689}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-3423840659134889741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 252
+    y: 971
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 'You''re a liar, you could never afford gold.
+
+'
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 34399806190154289}
+  childNode: {fileID: -8302353531643531592}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-2784999163230765721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 504
+    y: 1335
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 7726387472683781120}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
 --- !u!114 &-2573163867200547059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,8 +985,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 767
-    y: 374
+    x: -56
+    y: 24
     width: 190
     height: 155
   isDragging: 0
@@ -144,6 +996,36 @@ MonoBehaviour:
     text: 
     characterSprite: {fileID: 0}
   parentNode: {fileID: 7402181763335950164}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &-2049043764160616659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1022
+    y: -26
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 3408667521020289386}
   childNode: {fileID: 0}
   isExternalFunc: 1
   externalFunctionName: GameOver
@@ -163,8 +1045,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 779
-    y: 45
+    x: 48
+    y: -358
     width: 190
     height: 135
   isDragging: 0
@@ -193,8 +1075,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1248
-    y: 62
+    x: 601
+    y: -343
     width: 190
     height: 155
   isDragging: 0
@@ -207,6 +1089,129 @@ MonoBehaviour:
   childNode: {fileID: 0}
   isExternalFunc: 1
   externalFunctionName: GameOver
+--- !u!114 &-1013900265275681414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 285
+    y: 1162
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Completely wrong. Disappointing.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -8933649962776310169}
+  childNode: {fileID: 3028301765807419661}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-758457045406279964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -457
+    y: 1234
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Yes I did. And you even met him. And he loved you.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -90799736022506000}
+  childNode: {fileID: -7508018140288919632}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-271231195755085419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -170
+    y: 1061
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Correct. But when is my birthday?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -90799736022506000}
+  childNode: {fileID: -8933649962776310169}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-90799736022506000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -400
+    y: 1034
+    width: 190
+    height: 175
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - Spookos
+  - Skullky
+  - You never had a skeledog.
+  - Dogster
+  parentSentenceNode: {fileID: -5174553511989468079}
+  childSentenceNodes:
+  - {fileID: -271231195755085419}
+  - {fileID: 1946078455211465477}
+  - {fileID: -758457045406279964}
+  - {fileID: 710336530517659205}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,8 +1236,99 @@ MonoBehaviour:
   - {fileID: -6519716253823023858}
   - {fileID: -1163055711983133201}
   - {fileID: -2573163867200547059}
+  - {fileID: -4668688812578869399}
+  - {fileID: 3646551687640937118}
+  - {fileID: -4496991865927005617}
+  - {fileID: -6157749210250469095}
+  - {fileID: -4979568210175065781}
+  - {fileID: -3974773257197230920}
+  - {fileID: -7982984509137142313}
+  - {fileID: 7939415001207742299}
+  - {fileID: -5934997851610840639}
+  - {fileID: 1246056074102068709}
+  - {fileID: 6047263554577941092}
+  - {fileID: 3408667521020289386}
+  - {fileID: -2049043764160616659}
+  - {fileID: 8620571752627805850}
+  - {fileID: 4514363463418801445}
+  - {fileID: -6585798228902527230}
+  - {fileID: -7860668984690139235}
+  - {fileID: 1004871799482943669}
+  - {fileID: -5779531449275005605}
+  - {fileID: -3916829682761538569}
+  - {fileID: 6405755300554089838}
+  - {fileID: 420340439182579001}
+  - {fileID: 8011602405841507891}
+  - {fileID: 34399806190154289}
+  - {fileID: -4640106304863932550}
+  - {fileID: 7787866059569343415}
+  - {fileID: -7063074961819276489}
+  - {fileID: 5503311360408184589}
+  - {fileID: -3423840659134889741}
+  - {fileID: -8302353531643531592}
+  - {fileID: 3936153715287116985}
+  - {fileID: -6741666279610193329}
+  - {fileID: -7406974724271286972}
+  - {fileID: 1236219779838653689}
+  - {fileID: -7993604918546760985}
+  - {fileID: 8853953344185059104}
+  - {fileID: -6724834796570778250}
+  - {fileID: -5174553511989468079}
+  - {fileID: 306094964767045736}
+  - {fileID: -90799736022506000}
+  - {fileID: -271231195755085419}
+  - {fileID: 1946078455211465477}
+  - {fileID: 7059229732858091568}
+  - {fileID: -8933649962776310169}
+  - {fileID: -1013900265275681414}
+  - {fileID: 3028301765807419661}
+  - {fileID: 7726387472683781120}
+  - {fileID: -2784999163230765721}
+  - {fileID: -6368301278228081387}
+  - {fileID: 1869987226189071475}
+  - {fileID: -3462061408676600082}
+  - {fileID: -758457045406279964}
+  - {fileID: -7508018140288919632}
+  - {fileID: -5315893687901046968}
+  - {fileID: 710336530517659205}
+  - {fileID: -4394665353778176914}
+  - {fileID: 4876139418132830670}
+  - {fileID: -4821333101567325023}
   nodeToDrawLineFrom: {fileID: 0}
   linePosition: {x: 0, y: 0}
+--- !u!114 &34399806190154289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 106
+    y: 787
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - Diamond
+  - Silver
+  - 'Gold
+
+'
+  parentSentenceNode: {fileID: -6368301278228081387}
+  childSentenceNodes:
+  - {fileID: -4640106304863932550}
+  - {fileID: -7063074961819276489}
+  - {fileID: -3423840659134889741}
 --- !u!114 &219731907752236180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,8 +1345,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 523
-    y: 49
+    x: -249
+    y: -440
     width: 190
     height: 135
   isDragging: 0
@@ -262,6 +1358,68 @@ MonoBehaviour:
   parentNode: {fileID: -5845659083217363542}
   childNode: {fileID: -1597853461460815660}
   isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &306094964767045736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -648
+    y: 1039
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Then why do I even bother to be with you?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -6724834796570778250}
+  childNode: {fileID: 1869987226189071475}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &420340439182579001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 496
+    y: 371
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 'Nice try. But gross.
+
+'
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -5779531449275005605}
+  childNode: {fileID: 8011602405841507891}
+  isExternalFunc: 1
   externalFunctionName: 
 --- !u!114 &426645241737324523
 MonoBehaviour:
@@ -279,21 +1437,501 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 521
-    y: 208
+    x: -210
+    y: -196
     width: 190
-    height: 155
+    height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: F
     text: Because I suspected something was wrong, and I guess I was right. Dare
       to explain?
     characterSprite: {fileID: 0}
   parentNode: {fileID: 9032834097723415581}
+  childNode: {fileID: -4864337518730371855}
+  isExternalFunc: 0
+  externalFunctionName: Victory
+--- !u!114 &710336530517659205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -150
+    y: 897
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Not even close.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -90799736022506000}
+  childNode: {fileID: -4394665353778176914}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &1004871799482943669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 60
+    y: 230
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Which surprise?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7860668984690139235}
+  childNode: {fileID: -5779531449275005605}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &1236219779838653689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 74
+    y: 391
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: My birthday is in 9 months.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7406974724271286972}
+  childNode: {fileID: -3462061408676600082}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &1246056074102068709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 793
+    y: -182
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: You disgust me.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -5934997851610840639}
+  childNode: {fileID: 6047263554577941092}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &1869987226189071475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -671
+    y: 1193
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 306094964767045736}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &1946078455211465477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -236
+    y: 1230
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: That's pathetic, you don't even know that.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -90799736022506000}
+  childNode: {fileID: 7059229732858091568}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3028301765807419661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 558
+    y: 1151
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -1013900265275681414}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &3408667521020289386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 784
+    y: -41
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: This is the weirdest thing ever. Screw you and your necromancer.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -5934997851610840639}
+  childNode: {fileID: -2049043764160616659}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3646551687640937118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 865
+    y: -778
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Yeah right, I'm sure you're just heavy lifting this girl.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4668688812578869399}
+  childNode: {fileID: -4979568210175065781}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3936153715287116985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 279
+    y: 99
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Who is really that girl?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 420340439182579001}
+  childNode: {fileID: 9032834097723415581}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &4514363463418801445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 491
+    y: -23
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 8620571752627805850}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &4876139418132830670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -77
+    y: 1581
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Trust me, you would have known.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -8933649962776310169}
+  childNode: {fileID: -4821333101567325023}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &5503311360408184589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 711
+    y: 739
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7063074961819276489}
   childNode: {fileID: 0}
   isExternalFunc: 1
   externalFunctionName: Victory
+--- !u!114 &6047263554577941092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1014
+    y: -182
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 1246056074102068709}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &6405755300554089838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 759
+    y: 211
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -3916829682761538569}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &7059229732858091568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -224
+    y: 1387
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 1946078455211465477}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
 --- !u!114 &7402181763335950164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,8 +1948,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 517
-    y: 364
+    x: -250
+    y: 22
     width: 190
     height: 135
   isDragging: 0
@@ -322,6 +1960,186 @@ MonoBehaviour:
     characterSprite: {fileID: 0}
   parentNode: {fileID: 9032834097723415581}
   childNode: {fileID: -2573163867200547059}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &7726387472683781120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 272
+    y: 1312
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: You actually don't know me at all.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -8933649962776310169}
+  childNode: {fileID: -2784999163230765721}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &7787866059569343415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 743
+    y: 576
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4640106304863932550}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &7939415001207742299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 288
+    y: -198
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: You're litteraly only working with a necromancer.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4864337518730371855}
+  childNode: {fileID: -5934997851610840639}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &8011602405841507891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 765
+    y: 377
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: 
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: 420340439182579001}
+  childNode: {fileID: 0}
+  isExternalFunc: 1
+  externalFunctionName: GameOver
+--- !u!114 &8620571752627805850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 259
+    y: -45
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Goodbye then Spooky-Jack.
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -4864337518730371855}
+  childNode: {fileID: 4514363463418801445}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &8853953344185059104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -588
+    y: 678
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: 
+    text: Do you really think you know me enough to marry me?
+    characterSprite: {fileID: 0}
+  parentNode: {fileID: -7406974724271286972}
+  childNode: {fileID: -6724834796570778250}
   isExternalFunc: 0
   externalFunctionName: 
 --- !u!114 &9032834097723415581
@@ -340,18 +2158,20 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 218
-    y: 209
+    x: -513
+    y: -194
     width: 190
-    height: 155
+    height: 175
   isDragging: 0
   isSelected: 0
   answers:
-  - Yes, it's a girl from the gym club.
+  - It's a girl from the gym club.
   - Why were you looking into my phone?
   - Yes, I'm leaving you for Stacy.
-  parentSentenceNode: {fileID: -4893233432104991217}
+  - I don't want to tell you.
+  parentSentenceNode: {fileID: -5315893687901046968}
   childSentenceNodes:
   - {fileID: 219731907752236180}
   - {fileID: 426645241737324523}
   - {fileID: 7402181763335950164}
+  - {fileID: -6585798228902527230}
