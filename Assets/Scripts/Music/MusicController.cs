@@ -18,14 +18,20 @@ public class MusicController : MonoBehaviour
 
     void PlayCouple()
     {
+        int exactTime = audioSource.timeSamples;
         audioSource.clip = coupleClip;
-        audioSource.Play();
+        audioSource.timeSamples = exactTime;
+
+        audioSource.Play(); 
     }
 
     void PlayDiablo()
     {
+        int exactTime = audioSource.timeSamples;
         audioSource.clip = diabloClip;
-        audioSource.Play();
+        audioSource.timeSamples = exactTime;
+
+        audioSource.Play(); 
     }
 
     private void OnDestroy()
